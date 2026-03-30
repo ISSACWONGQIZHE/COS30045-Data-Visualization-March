@@ -1,121 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EnergySmart Australia</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Webpage</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <button class="logo-btn" id="homeLogo" aria-label="Go to Home page">
-      <span class="logo-mark">⏻</span>
-      <span class="logo-text">EnergySmart</span>
-    </button>
-
-    <nav class="nav" aria-label="Main navigation">
-      <button class="nav-link active" data-page="home">Home</button>
-      <button class="nav-link" data-page="televisions">Televisions</button>
-      <button class="nav-link" data-page="about">About Us</button>
-    </nav>
-
-    <div class="page-status" id="pageStatus">Current page: Home</div>
-  </header>
-
-  <main class="main-shell">
-    <section class="page active" id="home">
-      <div class="hero-card">
-        <p class="eyebrow">Australian Appliance Energy Awareness</p>
-        <h1>Smarter energy choices start at home.</h1>
-        <p class="lead">
-          This website highlights how common household appliances affect electricity use in the Australian market,
-          with a focus on televisions, efficiency, and everyday energy-saving habits.
-        </p>
-
-        <div class="hero-grid">
-          <div class="info-card">
-            <h2>Why it matters</h2>
-            <p>
-              Appliances can quietly add to household power bills, especially when they are used for long periods
-              or left on standby.
-            </p>
-          </div>
-          <div class="info-card">
-            <h2>What to look for</h2>
-            <p>
-              Energy rating labels, screen size, usage habits, and standby power all play a role in total consumption.
-            </p>
-          </div>
+    <header>
+        <div class="logo-container">
+            <img src="images/PowerIcon.png" alt="Power Logo" id="logo">
         </div>
-      </div>
-    </section>
+        <nav>
+            <ul>
+                <li data-page="home" class="active">Home</li>
+                <li data-page="televisions">Televisions</li>
+                <li data-page="about">About Us</li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="page" id="televisions">
-      <div class="content-card">
-        <p class="eyebrow">Televisions</p>
-        <h1>Energy use and TV buying habits in Australia</h1>
-        <p>
-          Televisions vary widely in energy use depending on screen size, display type, brightness settings,
-          and how many hours they are used each day. Larger screens often use more electricity, while
-          modern efficient models can reduce long-term operating costs.
-        </p>
+    <main id="content">
+        <!-- Page content will be injected here -->
+    </main>
 
-        <div class="stats-grid">
-          <article class="stat-card">
-            <h3>Screen size</h3>
-            <p>Big screens usually consume more power than compact models.</p>
-          </article>
-          <article class="stat-card">
-            <h3>Standby mode</h3>
-            <p>Even when off, some TVs still draw a small amount of electricity.</p>
-          </article>
-          <article class="stat-card">
-            <h3>Energy rating</h3>
-            <p>Higher-rated models are generally more efficient over time.</p>
-          </article>
-        </div>
+    <footer>
+        &copy; 2026 Issac Wong Qi Zhe | GenAI Assisted
+    </footer>
 
-        <div class="note-box">
-          <strong>Placeholder content:</strong>
-          In the Australian market, shoppers are often encouraged to compare energy labels and estimate annual running costs
-          before purchasing a television.
-        </div>
-      </div>
-    </section>
-
-    <section class="page" id="about">
-      <div class="content-card">
-        <p class="eyebrow">About Us</p>
-        <h1>Helping users understand household energy consumption</h1>
-        <p>
-          EnergySmart is a simple educational website designed to present appliance energy information in a clean,
-          easy-to-read format. The goal is to support better decisions around electricity use and appliance selection.
-        </p>
-
-        <div class="about-grid">
-          <div class="info-card">
-            <h2>Our purpose</h2>
-            <p>
-              To share practical information about energy use in a way that is clear, visual, and relevant.
-            </p>
-          </div>
-          <div class="info-card">
-            <h2>Our focus</h2>
-            <p>
-              Household appliances, running costs, and energy-conscious choices for Australian consumers.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>
-      © <span id="year"></span> Your Name. GenAI used to generate code and/or content.
-    </p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
