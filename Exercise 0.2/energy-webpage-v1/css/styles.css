@@ -1,17 +1,58 @@
+/* Colors inspired by power logo: adjust as needed */
+:root {
+  --primary: #2c3e50;
+  --accent: #e67e22;
+  --hover: #3498db;
+}
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  text-align: center;
-  padding: 20px;
+  margin: 0;
+  background: #f4f4f4;
 }
 
-h1 {
-  color: #2c3e50;
-}
-
-#data-section {
-  margin-top: 20px;
+nav {
+  display: flex;
+  align-items: center;
+  background: var(--primary);
   padding: 10px;
-  background: #fff;
-  border: 1px solid #ccc;
+}
+
+nav img#logo {
+  height: 40px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+nav ul li a:hover {
+  background: var(--hover);
+  border-radius: 4px;
+}
+
+nav ul li a.active {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: var(--primary);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
