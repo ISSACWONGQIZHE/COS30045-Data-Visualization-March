@@ -66,8 +66,8 @@ energy-webpage-v1
 ## Use of GenAI
 
 This project was developed with assistance from GenAI tools.  
-- Placeholder content for appliance energy consumption in the Australian market was generated with GenAI support.  
+- Placeholder content for appliance energy consumption in the Australian market was generated with the support of GenAI.  
 - Footer text and sample HTML/CSS snippets were drafted using GenAI.  
-- Final editing and integration were performed manually by Issac Wong Qi Zhe.  
+- Final editing and integration were performed manually by Issac Wong Qi Zhe. 
 
 © 2026 Issac Wong Qi Zhe | GenAI Assisted
