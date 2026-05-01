@@ -65,6 +65,15 @@ const pages = {
             </div>
 
             <div class="story-card">
+            <h2>Storyboard</h2>
+            <p>
+                    This storyboard outlines the planned flow of the website, starting from the issue,
+                    then moving through the audience, key visualisations, and final recommendation.
+            </p>
+                    <img class="story-image" src="images/storyboard.png" alt="Storyboard for the TV energy consumption data story">
+            </div>
+
+            <div class="story-card">
                 <h2>The Issue</h2>
                 <p>
                     Many consumers choose televisions based mainly on screen size, brand, or price. However, energy consumption is
