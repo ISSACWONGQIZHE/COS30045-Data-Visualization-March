@@ -81,29 +81,40 @@ const pages = {
                 </p>
             </div>
 
-            <div class="story-card">
+                        <div class="story-card">
                 <h2>Screen Technology</h2>
                 <p>
-                    LCD (LED) is the most common screen technology in the dataset, followed by LCD and OLED. This shows what types
-                    of TVs are most available in the dataset.
+                    LCD (LED) is the most common screen technology in the dataset, followed by LCD and OLED.
+                    This shows that LCD (LED) models are the most widely available among the TVs analysed.
                 </p>
+                <img class="chart-image" src="images/screen-technology-chart.png" alt="Bar chart showing counts of TV screen technologies">
+            </div>
+
+            <div class="story-card">
+                <h2>Power Use by Screen Technology</h2>
+                <p>
+                    LCD has the lowest average power consumption, while OLED has the highest average power consumption.
+                    This suggests that screen technology can influence how much power a television uses.
+                </p>
+                <img class="chart-image" src="images/screen-tech-power-chart.png" alt="Bar chart showing average power consumption by screen technology">
             </div>
 
             <div class="story-card">
                 <h2>Screen Size and Power Use</h2>
                 <p>
-                    Larger televisions generally consume more power. The data shows that larger screen sizes, especially 65-inch
-                    and 75-inch models, tend to use more power than smaller models.
+                    Screen sizes were grouped into categories before plotting. The scatter plot shows that larger screen
+                    sizes, especially 65-inch and 75-inch models, generally consume more power than smaller models.
                 </p>
+                <img class="chart-image" src="images/screen-size-power-chart.png" alt="Scatter plot showing screen size categories and power use">
             </div>
 
             <div class="story-card">
                 <h2>Star Rating and Screen Size</h2>
                 <p>
-                    The scatter plot shows that star ratings are distributed across all screen size categories without a clear pattern.
-                    Both small and large TVs have a wide range of star ratings, indicating that screen size does not significantly
-                    influence energy efficiency.
+                    Star ratings are spread across all screen size categories without a clear pattern. This shows that
+                    screen size alone does not strongly determine energy efficiency.
                 </p>
+                <img class="chart-image" src="images/star-rating-screen-size-chart.png" alt="Scatter plot showing star ratings across screen size categories">
             </div>
 
             <div class="recommendation-box">

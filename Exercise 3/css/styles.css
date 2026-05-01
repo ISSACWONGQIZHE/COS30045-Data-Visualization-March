@@ -139,6 +139,17 @@ main ul li {
     box-shadow: 0 5px 14px rgba(62, 47, 28, 0.18);
 }
 
+.chart-image {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 18px auto 0;
+    border-radius: 14px;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 5px 14px rgba(62, 47, 28, 0.18);
+}
+
 .highlight-box {
     margin-top: 25px;
 }
