@@ -39,5 +39,58 @@
             SVG House
         </text>
     </svg>
+    <section>
+    <h2>SVG Coordinate System</h2>
+
+    <p>
+        SVG uses a coordinate system where the origin <strong>(0,0)</strong> starts at the top-left corner.
+        The x value increases when moving to the right, and the y value increases when moving downward.
+        This is different from a normal maths graph, where y usually increases upward.
+    </p>
+
+    <table>
+        <tr>
+            <th>SVG shape</th>
+            <th>Example from my code</th>
+            <th>How the coordinates work</th>
+        </tr>
+        <tr>
+            <td>Rectangle</td>
+            <td><code>&lt;rect x="310" y="255" width="380" height="190"&gt;</code></td>
+            <td>The x and y values place the top-left corner of the house body. Width and height control the size.</td>
+        </tr>
+        <tr>
+            <td>Circle</td>
+            <td><code>&lt;circle cx="850" cy="90" r="48"&gt;</code></td>
+            <td>cx and cy place the centre of the sun. r controls the radius.</td>
+        </tr>
+        <tr>
+            <td>Polygon</td>
+            <td><code>&lt;polygon points="270,255 500,95 730,255"&gt;</code></td>
+            <td>Each pair of numbers is a point. The three points join together to form the roof.</td>
+        </tr>
+        <tr>
+            <td>Line</td>
+            <td><code>&lt;line x1="392.5" y1="305" x2="392.5" y2="380"&gt;</code></td>
+            <td>x1 and y1 are the starting point. x2 and y2 are the ending point.</td>
+        </tr>
+        <tr>
+            <td>Text</td>
+            <td><code>&lt;text x="397" y="225"&gt;SVG House&lt;/text&gt;</code></td>
+            <td>The x and y values position the text inside the SVG canvas.</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Annotated SVG Screenshot</h2>
+
+    <p>
+        This section is for the screenshot of my SVG drawing with annotations showing how the coordinates
+        in the code match the positions of the shapes in the drawing.
+    </p>
+
+    <img src="images/svg-annotation.png" alt="Annotated screenshot of SVG coordinate system">
+</section>
 </body>
 </html>
