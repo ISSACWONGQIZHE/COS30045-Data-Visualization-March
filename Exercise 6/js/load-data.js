@@ -13,7 +13,8 @@ function loadHistogramData() {
             return !isNaN(d.energyConsumption) &&
                 d.energyConsumption < 1800 &&
                 d.screenTech &&
-                !isNaN(d.screenSize);
+                !isNaN(d.screenSize) &&
+                !isNaN(d.star);
         });
 
         console.log(data);
@@ -31,6 +32,10 @@ function loadHistogramData() {
 
         drawHistogram(data);
         populateFilters(data);
+
+        drawInteractiveScatterplot(data);
+        createTooltip();
+        handleMouseEvents();
     }).catch(error => {
         console.error("Error loading the CSV file:", error);
     });

@@ -465,8 +465,20 @@ const pages = {
                 <p>
                     Only TVs with energy consumption below 1,800 kWh/year are included so the histogram remains readable.
                 </p>
+
+                <hr>
+
+                <h2>Exercise 6.2 - Interactive Scatterplot with Tooltip</h2>
+
+                <p>
+                    This scatterplot shows the relationship between TV star rating and labelled energy consumption.
+                    Colour is used to represent screen technology, and hovering over each point displays the TV screen size.
+                </p>
+
+                <div id="scatterplot_interactive" class="responsive-svg-container"></div>
             </div>
         </section>
+        
     `,
     
     about: `

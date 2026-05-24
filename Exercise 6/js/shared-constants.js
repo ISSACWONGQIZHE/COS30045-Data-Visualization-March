@@ -81,3 +81,14 @@ const filters_size = [
 
 let currentScreenFilter = "all";
 let currentSizeFilter = "all";
+let innerChartS;
+
+const tooltipWidth = 90;
+const tooltipHeight = 40;
+
+const xScaleS = d3.scaleLinear();
+const yScaleS = d3.scaleLinear();
+
+const colorScale = d3.scaleOrdinal()
+    .domain(["LED", "LCD", "OLED"])
+    .range(["#1f77b4", "#ff8a00", "#2ca02c"]);
