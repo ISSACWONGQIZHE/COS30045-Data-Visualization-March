@@ -359,7 +359,8 @@ const pages = {
                     in the browser console.
                 </p>
             </div>
-                        <div class="story-card">
+
+            <div class="story-card">
                 <h2>Exercise 4.5 - Bind and Draw Bars with Data</h2>
 
                 <p>
@@ -374,7 +375,8 @@ const pages = {
 
                 <div class="bar-chart-container"></div>
             </div>
-                        <div class="story-card">
+
+            <div class="story-card">
                 <h2>Exercise 4.6 - Scaling the Bar Chart</h2>
 
                 <p>
@@ -388,6 +390,49 @@ const pages = {
                 </p>
 
                 <div class="scaled-bar-chart-container"></div>
+            </div>
+        </section>
+    `,
+
+    exercise5: `
+        <section class="content-section">
+            <h1>Exercise 5 - D3 Multi-Chart Dashboard</h1>
+
+            <p class="intro-text">
+                This page presents four different D3 chart types using the provided Exercise 5 datasets.
+                The charts include a scatter plot, donut chart, bar chart, and line chart.
+            </p>
+
+            <div class="story-card">
+                <h2>Scatter Plot - Energy Consumption vs Star Rating</h2>
+                <p>
+                    This scatter plot compares labelled energy consumption against star rating for TV models.
+                </p>
+                <div id="scatterplot" class="chart-container"></div>
+            </div>
+
+            <div class="story-card">
+                <h2>Donut Chart - Screen Technology Across All TVs</h2>
+                <p>
+                    This donut chart shows the average labelled energy consumption for different screen technologies across all TV sizes.
+                </p>
+                <div id="donutchart" class="chart-container"></div>
+            </div>
+
+            <div class="story-card">
+                <h2>Bar Chart - 55-inch TVs by Screen Technology</h2>
+                <p>
+                    This bar chart compares average labelled energy consumption for 55-inch TVs across different screen technologies.
+                </p>
+                <div id="barchart" class="chart-container"></div>
+            </div>
+
+            <div class="story-card">
+                <h2>Line Chart - Average Spot Power Prices</h2>
+                <p>
+                    This line chart shows average spot power prices over time from the provided ARE spot price dataset.
+                </p>
+                <div id="linechart" class="chart-container"></div>
             </div>
         </section>
     `,
@@ -535,6 +580,13 @@ function loadPage(page) {
     if (page === 'exercise4') {
         createD3SetupDemo();
         loadBrandData();
+    }
+
+    if (page === 'exercise5') {
+        drawScatterPlot();
+        drawDonutChart();
+        drawBarChart();
+        drawLineChart();
     }
 }
 
