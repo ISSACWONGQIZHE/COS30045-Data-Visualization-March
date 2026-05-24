@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    background-color: #fff8e1;
+    color: #3e2f1c;
+    line-height: 1.7;
+    letter-spacing: 0.4px;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #a65c1c;
+    padding: 12px 28px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.22);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo-container img {
+    height: 52px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo-container img:hover {
+    transform: rotate(-8deg) scale(1.04);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+nav ul li {
+    padding: 9px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+nav ul li:hover {
+    background-color: #ffb74d;
+    color: #fff8e1;
+    transform: translateY(-1px);
+}
+
+nav ul li.active {
+    background-color: #ff8a00;
+    color: #fff8e1;
+}
+
+main {
+    padding: 55px 22px;
+    min-height: 72vh;
+    max-width: 1050px;
+    margin: auto;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    color: #a65c1c;
+    margin-bottom: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+main h2 {
+    font-size: 1.45rem;
+    color: #ff8a00;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+main p {
+    font-size: 1.03rem;
+    margin-bottom: 15px;
+}
+
+main ul {
+    list-style-type: disc;
+    margin-left: 22px;
+}
+
+main ul li {
+    margin-bottom: 8px;
+}
+
+.hero-section,
+.content-section {
+    animation: fadeIn 0.35s ease;
+}
+
+.intro-text {
+    max-width: 850px;
+    font-size: 1.12rem;
+    margin-bottom: 26px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 28px;
+}
+
+.info-card,
+.story-card,
+.highlight-box,
+.recommendation-box {
+    background-color: #fff3c4;
+    border: 1px solid rgba(166, 92, 28, 0.22);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 5px 14px rgba(62, 47, 28, 0.12);
+}
+
+.story-card {
+    margin-bottom: 20px;
+}
+
+.story-image {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 18px auto 0;
+    border-radius: 14px;
+    box-shadow: 0 5px 14px rgba(62, 47, 28, 0.18);
+}
+
+.chart-image {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 18px auto 0;
+    border-radius: 14px;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 5px 14px rgba(62, 47, 28, 0.18);
+}
+
+.highlight-box {
+    margin-top: 25px;
+}
+
+.recommendation-box {
+    margin-top: 25px;
+    background-color: #ffe4a3;
+    border-left: 7px solid #ff8a00;
+}
+
+footer {
+    text-align: center;
+    padding: 16px 0;
+    background-color: #a65c1c;
+    color: #fff8e1;
+    font-size: 0.9rem;
+}
+
+.exercise-svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    background: white;
+}
+
+.responsive-svg-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.responsive-svg-container svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #eeeeee;
+}
+
+code {
+    background: #eeeeee;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 760px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
