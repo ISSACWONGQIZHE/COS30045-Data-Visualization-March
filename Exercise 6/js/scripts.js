@@ -129,7 +129,7 @@ const pages = {
 
     exercise4: `
         <section class="content-section">
-            <h1>Exercise 4.1 - Draw SVGs</h1>
+            <h1>Exercise 4.1 - SVG House Drawing</h1>
 
             <p class="intro-text">
                 This exercise demonstrates how SVG shapes can be used to create a house and garden scene.
@@ -137,7 +137,7 @@ const pages = {
             </p>
 
             <div class="story-card">
-                <h2>Step 1 - Create a picture with SVG shapes</h2>
+                <h2>Customised SVG House and Garden Scene</h2>
 
                 <p>
                     The house and garden scene below was created directly with SVG elements such as rectangles,
@@ -241,7 +241,7 @@ const pages = {
             </div>
 
             <div class="story-card">
-                <h2>Step 2 - SVG Coordinate System</h2>
+                <h2>SVG Coordinate System</h2>
 
                 <p>
                     SVG uses a coordinate system where the origin <strong>(0,0)</strong> starts at the top-left corner.
@@ -303,7 +303,7 @@ const pages = {
             </div>
 
             <div class="story-card">
-                <h2>Step 3 - Customise the picture</h2>
+                <h2>Customised SVG Design</h2>
 
                 <p>
                     The SVG was customised by changing colours, adding strokes, adding a chimney, trees,
@@ -312,7 +312,7 @@ const pages = {
             </div>
 
             <div class="story-card">
-                <h2>Step 4 - Use group and transform</h2>
+                <h2>SVG Grouping and Transform</h2>
 
                 <p>
                     The two windows are placed inside a <code>&lt;g id="windows"&gt;</code> group.
@@ -322,7 +322,7 @@ const pages = {
             </div>
 
             <div class="story-card">
-                <h2>Step 5 - Annotated screenshot and DOM inspection</h2>
+                <h2>Annotation and DOM Inspection</h2>
 
                 <p>
                     The annotated screenshot shows how SVG coordinates match the drawing. The DOM screenshot
